@@ -6,7 +6,7 @@ export const LEGACY_ORIGIN = 'https://www.ecole-francaise-tachkent.com';
 export const ROUTES = {
   home: '/',
   presentation: `${BASE}/presentation`,
-  directorWord: `${BASE}/presentation/mot-de-directeur-sebastien-pinede`,
+  directorWord: `${BASE}/presentation/mot-de-directeur`,
   organisation: `${BASE}/presentation/histoire-de-lycee`,
   team: `${BASE}/presentation/equipe`,
   rules: `${BASE}/presentation/reglement-interieur`,
