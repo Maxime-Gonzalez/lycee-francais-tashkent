@@ -24,7 +24,7 @@ export default function Home() {
               De la maternelle à la terminale, un enseignement français plurilingue en Ouzbékistan.
             </p>
             <div className="hero__actions">
-              <Button to={ROUTES.presentation} variant="accent">nous découvrir</Button>
+              <Button to={ROUTES.presentation} variant="accent">Nous découvrir</Button>
               <Button to={ROUTES.enrolment} variant="light">S’inscrire</Button>
             </div>
           </div>

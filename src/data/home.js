@@ -12,9 +12,9 @@ export const NEWS = [
 ];
 
 export const TILES = [
-  { title: 'Bienvenue au Lycée Français de Tachkent', cta: 'nous découvrir', to: R.presentation },
-  { title: "L'éducation française", cta: 'pourquoi inscrire mon enfant?', to: R.teaching },
-  { title: "Lycée en un clin d'oeil", cta: 'retrouver les infos pratiques', to: R.practical },
+  { title: 'Bienvenue au Lycée Français de Tachkent', cta: 'Nous découvrir', to: R.presentation },
+  { title: "L'éducation française", cta: 'Pourquoi inscrire mon enfant ?', to: R.teaching },
+  { title: "Lycée en un clin d'oeil", cta: 'Retrouver les infos pratiques', to: R.practical },
   { title: 'La vie scolaire', cta: 'Découvrir toutes les activités', to: R.schoolLife },
   { title: 'Dans ma classe...', cta: 'Partager nos bons moments', to: R.myClass },
   { title: 'Nos actus', cta: 'Retrouvez notre actualité sur notre Facebook', href: 'https://www.facebook.com/EcoleFrancaiseTachkent' },
@@ -23,7 +23,7 @@ export const TILES = [
 export const STRENGTHS = [
   { title: 'Un lycée bienveillant', text: 'Des classes à effectifs réduits pour assurer la réussite de chacun' },
   { title: 'Un lycée reconnu', text: 'Homologué par l’AEFE (élémentaire) et le CNED (secondaire)' },
-  { title: "Un lycée de l'excellence", text: '100% de réussite au Baccalauréat et au Brevet' },
+  { title: "Un lycée de l'excellence", text: '100% de réussite au Baccalauréat et au Diplôme national du Brevet (DNB)' },
   { title: 'Un lycée multiculturel', text: '12 nationalités présentes et une éducation plurilingue exigeante' },
 ];
 
