@@ -1,0 +1,21 @@
+:root {
+  /* French flag palette */
+  --blue: #0055a4;
+  --blue-deep: #002654;
+  --blue-soft: #e8f0fa;
+  --red: #ef4135;
+  --red-deep: #c42f25;
+  --white: #ffffff;
+
+  --ink: #14213d;
+  --ink-soft: #46546e;
+  --paper: #f6f8fc;
+  --line: #d9e1ee;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Public Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --radius: 6px;
+  --container: 1120px;
+  --header-h: 76px;
+}

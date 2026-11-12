@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block; padding: .8rem 1.4rem; border-radius: var(--radius);
+  font-weight: 600; text-decoration: none; border: 2px solid transparent;
+  transition: background-color .15s, color .15s, border-color .15s;
+}
+.btn--primary { background: var(--blue); color: #fff; }
+.btn--primary:hover { background: var(--blue-deep); color: #fff; }
+.btn--accent { background: var(--red); color: #fff; }
+.btn--accent:hover { background: var(--red-deep); color: #fff; }
+.btn--ghost { border-color: var(--blue); color: var(--blue); background: transparent; }
+.btn--ghost:hover { background: var(--blue); color: #fff; }
+.btn--light { border-color: #fff; color: #fff; background: transparent; }
+.btn--light:hover { background: #fff; color: var(--blue-deep); }

@@ -1,0 +1,8 @@
+.tricolor { display: flex; height: 5px; width: 100%; }
+.tricolor span { flex: 1; }
+.tricolor span:nth-child(1) { background: var(--blue); }
+.tricolor span:nth-child(2) { background: var(--white); box-shadow: inset 0 0 0 1px var(--line); }
+.tricolor span:nth-child(3) { background: var(--red); }
+
+.tricolor--vertical { flex-direction: column; width: 8px; height: 100%; }
+.tricolor--vertical span:nth-child(2) { box-shadow: none; }

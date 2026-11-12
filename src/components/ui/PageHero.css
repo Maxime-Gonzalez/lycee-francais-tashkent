@@ -1,0 +1,6 @@
+.page-hero { background: var(--blue-deep); color: #fff; padding: 3.5rem 0 0; position: relative; }
+.page-hero .container { padding-bottom: 3rem; }
+.page-hero h1 { color: #fff; max-width: 20ch; margin-bottom: .4em; }
+.page-hero__crumb { margin: 0 0 .8rem; color: #b8cbe6; font-size: .95rem; }
+.page-hero__intro { max-width: 60ch; color: #d6e2f3; font-size: 1.15rem; margin: 0; }
+.page-hero__bar { height: 8px; }

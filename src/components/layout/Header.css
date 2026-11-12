@@ -1,0 +1,56 @@
+.header { position: sticky; top: 0; z-index: 50; background: #fff; box-shadow: 0 1px 0 var(--line); }
+
+.header__top { background: var(--paper); font-size: .85rem; }
+.header__top-inner { display: flex; justify-content: space-between; align-items: center; padding: .3rem 0; }
+.header__social { display: flex; gap: 1rem; }
+.header__social a { color: var(--ink-soft); text-decoration: none; }
+.header__social a:hover { color: var(--blue); text-decoration: underline; }
+.header__cta { color: var(--red-deep); font-weight: 700; text-decoration: none; }
+.header__cta:hover { text-decoration: underline; color: var(--red-deep); }
+
+.header__main { display: flex; align-items: center; justify-content: space-between; min-height: var(--header-h); gap: 1.5rem; }
+
+/* Burger (mobile) */
+.header__burger { display: none; background: none; border: 2px solid var(--blue); border-radius: var(--radius); width: 46px; height: 42px; cursor: pointer; position: relative; }
+.header__burger-icon, .header__burger-icon::before, .header__burger-icon::after {
+  position: absolute; left: 50%; width: 20px; height: 2px; background: var(--blue); transform: translateX(-50%); content: '';
+}
+.header__burger-icon { top: 50%; }
+.header__burger-icon::before { top: -7px; left: 50%; }
+.header__burger-icon::after { top: 7px; left: 50%; }
+
+/* Navigation */
+.nav__list { display: flex; gap: .25rem; align-items: center; }
+.nav__item { position: relative; }
+.nav__row { display: flex; align-items: center; }
+.nav__link { display: block; padding: .6rem .7rem; color: var(--ink); font-weight: 600; font-size: .95rem; text-decoration: none; border-bottom: 3px solid transparent; }
+.nav__link:hover { color: var(--blue); }
+.nav__link.active { color: var(--blue); border-bottom-color: var(--red); }
+
+.nav__toggle { width: 22px; height: 22px; margin-left: -.5rem; background: none; border: 0; cursor: pointer; position: relative; }
+.nav__toggle::before { content: ''; position: absolute; inset: 6px 5px auto; width: 6px; height: 6px; border-right: 2px solid var(--blue); border-bottom: 2px solid var(--blue); transform: rotate(45deg); transition: transform .15s; }
+.nav__item.is-open .nav__toggle::before { transform: rotate(-135deg); top: 9px; }
+
+.nav__sub { display: none; position: absolute; top: 100%; left: 0; min-width: 260px; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 0 0 var(--radius) var(--radius); box-shadow: 0 12px 28px rgba(0, 38, 84, .12); padding: .4rem 0; }
+.nav__item.is-open > .nav__sub, .nav__item:focus-within > .nav__sub { display: block; }
+@media (hover: hover) { .nav__item:hover > .nav__sub { display: block; } }
+.nav__sublink { display: block; padding: .5rem 1rem; color: var(--ink); text-decoration: none; font-size: .95rem; }
+.nav__sublink:hover { background: var(--blue-soft); color: var(--blue); }
+.nav__sublink.active { color: var(--red-deep); font-weight: 700; }
+
+/* Mobile */
+@media (max-width: 1060px) {
+  .header__burger { display: block; }
+  .nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-top: 1px solid var(--line); box-shadow: 0 16px 30px rgba(0, 38, 84, .15); max-height: calc(100vh - var(--header-h) - 40px); overflow-y: auto; }
+  .nav.is-open { display: block; }
+  .nav__list { flex-direction: column; align-items: stretch; gap: 0; padding: .5rem 1.25rem 1rem; }
+  .nav__row { justify-content: space-between; border-bottom: 1px solid var(--line); }
+  .nav__link { flex: 1; padding: .9rem 0; border-bottom: 0; }
+  .nav__toggle { width: 44px; height: 44px; margin: 0; }
+  .nav__toggle::before { inset: 17px auto auto 17px; }
+  .nav__item.is-open .nav__toggle::before { top: 20px; }
+  .nav__sub { position: static; display: none; box-shadow: none; border: 0; border-left: 3px solid var(--red); margin: .3rem 0 .6rem .3rem; min-width: 0; }
+  .nav__item:focus-within > .nav__sub { display: none; }
+  .nav__item.is-open > .nav__sub { display: block; }
+}
+@media (max-width: 480px) { .header__social { display: none; } .header__top-inner { justify-content: flex-end; } }

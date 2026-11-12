@@ -1,0 +1,16 @@
+.letter { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 3.5rem; align-items: start; }
+.letter__body { max-width: 68ch; font-family: var(--font-display); font-size: 1.15rem; line-height: 1.75; }
+.letter__body h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); }
+.letter__lead { font-size: 1.35rem; line-height: 1.55; color: var(--blue-deep); padding-left: 1.2rem; border-left: 6px solid var(--red); }
+.letter__sign { margin-top: 2.2rem; display: flex; flex-direction: column; gap: .2rem; }
+.letter__sign strong { font-size: 1.4rem; color: var(--blue-deep); }
+
+.letter__aside { position: sticky; top: calc(var(--header-h) + 3.5rem); background: var(--blue-soft); border-top: 6px solid var(--blue); padding: 1.5rem; border-radius: var(--radius); }
+.letter__aside h3 { margin-bottom: .8rem; }
+.letter__aside ul { margin-bottom: 1.4rem; }
+.letter__aside li { padding: .5rem 0; border-bottom: 1px solid var(--line); font-weight: 600; color: var(--blue-deep); }
+
+@media (max-width: 900px) {
+  .letter { grid-template-columns: 1fr; gap: 2rem; }
+  .letter__aside { position: static; order: -1; }
+}

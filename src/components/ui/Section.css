@@ -1,0 +1,5 @@
+.section { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.section--paper { background: var(--paper); }
+.section--blue { background: var(--blue-deep); color: #fff; }
+.section--blue h2, .section--blue h3 { color: #fff; }
+.section__title { margin-bottom: 1.4rem; }
